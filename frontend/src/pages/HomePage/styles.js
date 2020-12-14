@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const ContentContainer = styled.div`
-    background: blue;
+    background: yellow;
     padding: 1rem;
     text-align: center;
 `

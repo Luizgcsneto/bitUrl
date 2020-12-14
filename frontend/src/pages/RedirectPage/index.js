@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/Header'
 import {Container} from 'react-bootstrap'
 import {StatsContainer} from './styles'
+import vars from '../../configs/vars'
 
 import bitUrlService from '../../services/bitUrlService'
 

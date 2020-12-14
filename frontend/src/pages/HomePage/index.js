@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import { Container, InputGroup, FormControl, Button, Alert, Spinner } from 'react-bootstrap'
 import { ContentContainer, Form } from './styles'
 import bitUrlService from '../../services/bitUrlService'
+import vars from '../../configs/vars';
 
 class HomePage extends React.Component {
     constructor (props) {
@@ -66,14 +67,14 @@ class HomePage extends React.Component {
                                     <InputGroup>
                                         <FormControl 
                                             autofocus={true}
-                                            defaultValue={`https://bitUrl.biturl.des.br/${code}`}
+                                            defaultValue={vars.HOST_APP + code}
                                             ref={ (input) => this.inputURL = input }
                                         />
                                         <InputGroup.Append>
                                             <Button variant="outline-secondary" onClick={() => this.copyToClipboard()}>Copiar</Button>
                                         </InputGroup.Append>
                                     </InputGroup>
-                            <p>Para acompanhar as estatísticas acesse https://bitUrl.biturl.des.br/{code}</p>
+                            <p>Para acompanhar as estatísticas acesse https://bitUrl.des.br/{code}</p>
                                 </>
                             )
                         )}
